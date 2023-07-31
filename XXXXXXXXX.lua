@@ -1,0 +1,12 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.9.14) ~  Much Love, Ferib 
+
+]]--
+
+local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v11,v12)local v13={};for v16=1, #v11 do v6(v13,v0(v4(v1(v2(v11,v16,v16 + 1 )),v1(v2(v12,1 + (v16% #v12) ,1 + (v16% #v12) + 1 )))%256 ));end return v5(v13);end local v8={};local v9="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";v8.gay=function(v14,v15)v15=string.gsub(v15,v7("\234\253","\126\177\163\187\69\134\219\167")   .. v9   .. v7("\126\240","\156\67\173\74\165") ,"");return (v15:gsub(".",function(v17)local v18=0 -0 ;local v19;local v20;local v21;while true do if (v18==(791 -(368 + 423))) then v19=0 -0 ;v20=nil;v18=1;end if (v18==(1 + 0)) then v21=nil;while true do if (v19==(351 -(87 + 263))) then for v27=448 -(416 + 26) ,181 -(67 + 113) , -(1 + 0) do v20=v20   .. (((((v21%((2 + 0)^v27)) -(v21%(2^(v27-(2 -1)))))>(0 + 0)) and "1") or "0") ;end return v20;end if (v19==(0 -0)) then if (v17=="=") then return "";end v20,v21="",v9:find(v17) -(953 -(802 + 150)) ;v19=2 -1 ;end end break;end end end):gsub(v7("\113\179\12\18\249\34\25\113\179\22\83\184\121\3\48\232\12\18\227\99\66\107","\38\84\215\41\118\220\70"),function(v22)local v23=0 -0 ;local v24;local v25;while true do if (v23==(1 + 0)) then while true do if (v24==(1 + 0)) then for v28=998 -(915 + 82) ,22 -14  do v25=v25 + (((v22:sub(v28,v28)=="1") and ((8 -6)^((5 + 3) -v28))) or (0 + 0)) ;end return string.char(v25);end if (v24==(0 -0)) then local v26=0 -0 ;while true do if (v26==(1187 -(1069 + 118))) then if ( #v22~=8) then return "";end v25=0 -0 ;v26=1 + 0 ;end if (v26==(2 -1)) then v24=1 + 0 ;break;end end end end break;end if ((0 -0)==v23) then v24=0 + 0 ;v25=nil;v23=1 -0 ;end end end));end;return v8;
